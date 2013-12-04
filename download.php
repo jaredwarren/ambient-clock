@@ -1,32 +1,37 @@
 <?php
 
+$root = "C:/data/www/sandbox/ambient";
 
 
 $url = 'http://science-fiction.ambient-mixer.com/flynn-lives';
 $url = 'http://relaxing.ambient-mixer.com/on-a-ship-at-sea';
+
 $name = basename($url);
 
-$out = file_get_contents($url);
+if(is_file("$root/data/$name.xml")){
+	// find template id by url
+	$out = file_get_contents($url);
+	preg_match('/soundTemplate ?: ?\'([0-9]+?)\',/', $out, $matches);
+	$id = $matches[1];
+	if(empty($id)){
+		throw new Exception("No Id", 1);
+	}
 
-preg_match('/soundTemplate ?: ?\'([0-9]+?)\',/', $out, $matches);
-$id = $matches[1];
+	// get xml from url
+	$xmlString = file_get_contents('http://xml.ambient-mixer.com/audio-template?id%5Ftemplate='.$id);
+	if(empty($xmlString)){
+		throw new Exception("No xml", 1);
+	}
 
-$xmlUrl = 'http://xml.ambient-mixer.com/audio-template?id%5Ftemplate='.$id;
+	// save xml
+	file_put_contents("$root/data/$name.xml", $xmlString);
+}
+else{
+	// get xml
+	$xmlString = file_get_contents("$root/data/$name.xml");
+}
 
-$xmlString = file_get_contents($xmlUrl);
-
-file_put_contents("C:/data/www/sandbox/ambient/data/$name.xml", $xmlString);
-
-
-
-
-
-
-
-$root = "C:/data/www/sandbox/ambient";
-$name = 'flynn-lives';
-
-$xmlString = file_get_contents("$root/data/$name.xml");
+//parse xml
 $xmlString = preg_replace('/<(\/?channel)[0-9]>/', '<$1s>', $xmlString);
 $xml = simplexml_load_string($xmlString);
 
@@ -71,15 +76,16 @@ foreach ($xml->children() as $element) {
 	}
 }
 
+// save as json
 $jsonString = json_encode($manifest, JSON_PRETTY_PRINT);
-
-
-file_put_contents("C:/data/www/sandbox/ambient/data/$name.json", $jsonString);
-
+file_put_contents("$root/data/$name.json", $jsonString);
 
 
 
 
+/**
+FUNCTIONS
+*/
 function downloadAudio($url, $path, $override=false){
 	// download audio
 	if($override || !is_file($path)){
