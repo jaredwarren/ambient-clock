@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audio_template>
+ <channel1>
+  <id_audio>490</id_audio>
+  <name_audio>Underwater Clash</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/9/2/7/927c12118279c29f436c656c01d8c2bc.mp3</url_audio>
+  <mute>false</mute>
+  <volume>81</volume>
+  <balance>-15</balance>
+  <random>false</random>
+  <random_counter>1</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>true</crossfade>
+ </channel1>
+ <channel2>
+  <id_audio>117</id_audio>
+  <name_audio>Stuttering Synth 1</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/2/2/0/2202a60a425ceba2f8fdb9d602ae1a5d.mp3</url_audio>
+  <mute>false</mute>
+  <volume>43</volume>
+  <balance>-28</balance>
+  <random>true</random>
+  <random_counter>4</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>false</crossfade>
+ </channel2>
+ <channel3>
+  <id_audio>118</id_audio>
+  <name_audio>Stuttering Synth 2</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/5/c/b/5cbf0af1743fa646f7204cf1ba54fe22.mp3</url_audio>
+  <mute>false</mute>
+  <volume>33</volume>
+  <balance>30</balance>
+  <random>true</random>
+  <random_counter>4</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>false</crossfade>
+ </channel3>
+ <channel4>
+  <id_audio>748</id_audio>
+  <name_audio>Harmonic Rumble</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/0/f/d/0fd3858afdc0abc7bcc543a269364a75.mp3</url_audio>
+  <mute>false</mute>
+  <volume>63</volume>
+  <balance>16</balance>
+  <random>false</random>
+  <random_counter>1</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>true</crossfade>
+ </channel4>
+ <channel5>
+  <id_audio>586</id_audio>
+  <name_audio>male choir</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/5/9/b/59b87f16163668b28a62451dd0287872.mp3</url_audio>
+  <mute>false</mute>
+  <volume>49</volume>
+  <balance>0</balance>
+  <random>false</random>
+  <random_counter>1</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>true</crossfade>
+ </channel5>
+ <channel6>
+  <id_audio>757</id_audio>
+  <name_audio>Processing Computer</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/9/a/9/9a9df97dbe99dc653d67bdb3e3331b93.mp3</url_audio>
+  <mute>false</mute>
+  <volume>13</volume>
+  <balance>50</balance>
+  <random>true</random>
+  <random_counter>5</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>false</crossfade>
+ </channel6>
+ <channel7>
+  <id_audio>275</id_audio>
+  <name_audio>Cello Drone</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/9/b/b/9bbe66c5a2c455bbf1f1c938d882b526.mp3</url_audio>
+  <mute>false</mute>
+  <volume>56</volume>
+  <balance>0</balance>
+  <random>true</random>
+  <random_counter>2</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>false</crossfade>
+ </channel7>
+ <channel8>
+  <id_audio>308</id_audio>
+  <name_audio>Tibetan Chant</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/6/e/0/6e0040d3dea722c70a6882e16585524f.mp3</url_audio>
+  <mute>false</mute>
+  <volume>29</volume>
+  <balance>17</balance>
+  <random>true</random>
+  <random_counter>2</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>false</crossfade>
+ </channel8>
+ <id_template>2057</id_template>
+ <id_session_user>false</id_session_user>
+ <id_session_player>0a9a21a5031666ed530e1b8ba9693ce4</id_session_player>
+</audio_template>

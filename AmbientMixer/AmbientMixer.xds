@@ -1,0 +1,48 @@
+{
+    "name": "AmbientMixer",
+    "settings": {
+        "cmd": {
+            "license": "gpl",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.3.0.328"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1337,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000003,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "78922648-81c3-4d32-8f84-b21a08878ecd"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "28664d3f-a5a2-498e-9a9d-cdb6b67f001d",
+            "5fb362e9-680b-41bd-92f7-15b312cfa8a0"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
