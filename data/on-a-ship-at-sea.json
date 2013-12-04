@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "src": "Solitudo_Winds_loop.mp3",
+        "data": {
+            "name": "Solitudo_Winds_loop",
+            "mute": false,
+            "volume": 0.43,
+            "balance": 0.5,
+            "random": false,
+            "crossfade": true,
+            "frequency": 0.016666666666667,
+            "delay": 60
+        }
+    },
+    {
+        "id": 2,
+        "src": "Heavenly_Choirs.mp3",
+        "data": {
+            "name": "Heavenly_Choirs",
+            "mute": false,
+            "volume": 0.43,
+            "balance": 0,
+            "random": false,
+            "crossfade": true,
+            "frequency": 0.016666666666667,
+            "delay": 60
+        }
+    },
+    {
+        "id": 3,
+        "src": "Heart_Beat.mp3",
+        "data": {
+            "name": "Heart_Beat",
+            "mute": false,
+            "volume": 0.13,
+            "balance": 0,
+            "random": true,
+            "crossfade": false,
+            "frequency": 0.4,
+            "delay": 2.5
+        }
+    },
+    {
+        "id": 4,
+        "src": "Waves_on_shore.mp3",
+        "data": {
+            "name": "Waves_on_shore",
+            "mute": false,
+            "volume": 0.29,
+            "balance": 0.5,
+            "random": false,
+            "crossfade": true,
+            "frequency": 0.016666666666667,
+            "delay": 60
+        }
+    },
+    {
+        "id": 5,
+        "src": "Ship_squeak.mp3",
+        "data": {
+            "name": "Ship_squeak",
+            "mute": false,
+            "volume": 0.83,
+            "balance": 0,
+            "random": true,
+            "crossfade": false,
+            "frequency": 0.033333333333333,
+            "delay": 30
+        }
+    },
+    {
+        "id": 6,
+        "src": "Seagulls_Call.mp3",
+        "data": {
+            "name": "Seagulls_Call",
+            "mute": false,
+            "volume": 0.43,
+            "balance": 0.5,
+            "random": true,
+            "crossfade": false,
+            "frequency": 0.0083333333333333,
+            "delay": 120
+        }
+    },
+    {
+        "id": 7,
+        "src": "Ship_Bells.mp3",
+        "data": {
+            "name": "Ship_Bells",
+            "mute": false,
+            "volume": 0.3,
+            "balance": 0.5,
+            "random": true,
+            "crossfade": false,
+            "frequency": 0.0033333333333333,
+            "delay": 300
+        }
+    },
+    {
+        "id": 8,
+        "src": "Ocean_Wide_stereo.mp3",
+        "data": {
+            "name": "Ocean_Wide_stereo",
+            "mute": false,
+            "volume": 0.3,
+            "balance": 0,
+            "random": false,
+            "crossfade": true,
+            "frequency": 0.033333333333333,
+            "delay": 30
+        }
+    }
+]

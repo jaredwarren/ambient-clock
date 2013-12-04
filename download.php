@@ -1,5 +1,8 @@
 <?php
 
+
+set_time_limit(300);
+
 $root = "C:/data/www/sandbox/ambient";
 
 
@@ -8,7 +11,7 @@ $url = 'http://relaxing.ambient-mixer.com/on-a-ship-at-sea';
 
 $name = basename($url);
 
-if(is_file("$root/data/$name.xml")){
+if(!is_file("$root/data/$name.xml")){
 	// find template id by url
 	$out = file_get_contents($url);
 	preg_match('/soundTemplate ?: ?\'([0-9]+?)\',/', $out, $matches);
@@ -17,14 +20,8 @@ if(is_file("$root/data/$name.xml")){
 		throw new Exception("No Id", 1);
 	}
 
-	// get xml from url
-	$xmlString = file_get_contents('http://xml.ambient-mixer.com/audio-template?id%5Ftemplate='.$id);
-	if(empty($xmlString)){
-		throw new Exception("No xml", 1);
-	}
-
 	// save xml
-	file_put_contents("$root/data/$name.xml", $xmlString);
+	downloadFile('http://xml.ambient-mixer.com/audio-template?id%5Ftemplate='.$id, "$root/data/$name.xml");
 }
 else{
 	// get xml
@@ -42,7 +39,7 @@ foreach ($xml->children() as $element) {
 	$nodeName = $element->getName();
 	if(preg_match('/^channel/', $nodeName)){
 		$audioName = str_replace(' ', '_', $element->name_audio.'');
-		downloadAudio($element->url_audio.'', "$root/sounds/$audioName.mp3");
+		downloadFile($element->url_audio.'', "$root/sounds/$audioName.mp3");
 		
 		$channel = new stdClass();
 		$channel->id = $counter++;//intval($element->id_audio.'');
@@ -81,17 +78,15 @@ $jsonString = json_encode($manifest, JSON_PRETTY_PRINT);
 file_put_contents("$root/data/$name.json", $jsonString);
 
 
-
-
 /**
 FUNCTIONS
 */
-function downloadAudio($url, $path, $override=false){
-	// download audio
+function downloadFile($url, $path, $override=false){
+	// download file
 	if($override || !is_file($path)){
 		$ok = file_put_contents($path, file_get_contents($url));
 		if(!$ok){
-			error_log("Failed to download audio $url, $path");
+			error_log("Failed to download file $url, $path");
 			return FALSE;
 		}
 		else{

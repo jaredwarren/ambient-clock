@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audio_template>
+ <channel1>
+  <id_audio>340</id_audio>
+  <name_audio>Solitudo Winds loop</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/5/9/d/59da67e01add03c4551b789d287d97ea.mp3</url_audio>
+  <mute>false</mute>
+  <volume>43</volume>
+  <balance>50</balance>
+  <random>false</random>
+  <random_counter>1</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>true</crossfade>
+ </channel1>
+ <channel2>
+  <id_audio>519</id_audio>
+  <name_audio>Heavenly Choirs</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/c/3/a/c3accb867c9e62fad48e0a98b17c7e74.mp3</url_audio>
+  <mute>false</mute>
+  <volume>43</volume>
+  <balance>0</balance>
+  <random>false</random>
+  <random_counter>1</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>true</crossfade>
+ </channel2>
+ <channel3>
+  <id_audio>364</id_audio>
+  <name_audio>Heart Beat</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/c/c/8/cc895382afe57a5fa1ad5554dac69c91.mp3</url_audio>
+  <mute>false</mute>
+  <volume>13</volume>
+  <balance>0</balance>
+  <random>true</random>
+  <random_counter>24</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>false</crossfade>
+ </channel3>
+ <channel4>
+  <id_audio>291</id_audio>
+  <name_audio>Waves on shore</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/5/c/a/5ca675af49f1ed9b04980834ffc3fa20.mp3</url_audio>
+  <mute>false</mute>
+  <volume>29</volume>
+  <balance>50</balance>
+  <random>false</random>
+  <random_counter>1</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>true</crossfade>
+ </channel4>
+ <channel5>
+  <id_audio>178</id_audio>
+  <name_audio>Ship squeak</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/8/9/b/89bd70decd3e2212ed97bc02642497cd.mp3</url_audio>
+  <mute>false</mute>
+  <volume>83</volume>
+  <balance>0</balance>
+  <random>true</random>
+  <random_counter>2</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>false</crossfade>
+ </channel5>
+ <channel6>
+  <id_audio>173</id_audio>
+  <name_audio>Seagulls Call</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/a/e/f/aef4f8e4684ad0238e1a0938e536430f.mp3</url_audio>
+  <mute>false</mute>
+  <volume>43</volume>
+  <balance>50</balance>
+  <random>true</random>
+  <random_counter>5</random_counter>
+  <random_unit>10m</random_unit>
+  <crossfade>false</crossfade>
+ </channel6>
+ <channel7>
+  <id_audio>75</id_audio>
+  <name_audio>Ship Bells</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/1/d/5/1d5684fb13a5ad174734229617fca5ba.mp3</url_audio>
+  <mute>false</mute>
+  <volume>30</volume>
+  <balance>50</balance>
+  <random>true</random>
+  <random_counter>2</random_counter>
+  <random_unit>10m</random_unit>
+  <crossfade>false</crossfade>
+ </channel7>
+ <channel8>
+  <id_audio>537</id_audio>
+  <name_audio>Ocean Wide stereo</name_audio>
+  <url_audio>http://www.ambient-mixer.com/audio/5/e/8/5e85b630d17bf8232f64837fe7746969.mp3</url_audio>
+  <mute>false</mute>
+  <volume>30</volume>
+  <balance>0</balance>
+  <random>false</random>
+  <random_counter>2</random_counter>
+  <random_unit>1m</random_unit>
+  <crossfade>true</crossfade>
+ </channel8>
+ <id_template>189</id_template>
+ <id_session_user>false</id_session_user>
+ <id_session_player>add3e6348674859c6a18b7dc9dd661da</id_session_player>
+</audio_template>
