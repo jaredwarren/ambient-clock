@@ -15,7 +15,7 @@
             },
             "viewportOrientation": "portrait"
         },
-        "urlPrefix": "",
+        "urlPrefix": "http://sandbox/ambient/AmbientMixer/",
         "exportPath": "",
         "spacesToIndent": 4,
         "sdkPath": "",
@@ -23,20 +23,26 @@
         "genTimestamps": false,
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
-        "generateArchitectVersion": true
+        "generateArchitectVersion": true,
+        "displayfield-ExtBox1-1484-inputEl": "Not Installed",
+        "displayfield-ExtBox1-1530-inputEl": "Not Installed"
     },
-    "xdsVersion": "3.0.0",
-    "xdsBuild": 1337,
+    "xdsVersion": "3.0.1",
+    "xdsBuild": 1343,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000003,
+    "upgradeVersion": 300000000004,
     "framework": "touch23",
     "viewOrderMap": {
         "view": [
             "78922648-81c3-4d32-8f84-b21a08878ecd"
         ],
-        "store": [],
+        "store": [
+            "7bf97a15-d0e6-4447-a261-f562d7821bbf"
+        ],
         "controller": [],
-        "model": [],
+        "model": [
+            "d0ace69b-40e6-4d3f-a7cc-8acd8011a601"
+        ],
         "resource": [
             "28664d3f-a5a2-498e-9a9d-cdb6b67f001d",
             "5fb362e9-680b-41bd-92f7-15b312cfa8a0"

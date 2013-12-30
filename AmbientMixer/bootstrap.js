@@ -20,6 +20,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.draw.engine.SvgContext.Gradient": "touch/src/draw/engine/SvgContext.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
+  "AmbientMixer.view.ChannelFormPanel": [],
   "AmbientMixer.view.Main": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
@@ -745,6 +746,7 @@ Ext.ClassManager.addNameAlternateMappings({
   ]
 });
 Ext.ClassManager.addNameAliasMappings({
+  "AmbientMixer.view.ChannelFormPanel": [],
   "AmbientMixer.view.Main": [
     "widget.main"
   ],

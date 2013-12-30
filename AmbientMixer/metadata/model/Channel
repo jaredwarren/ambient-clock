@@ -1,0 +1,74 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Channel"
+    },
+    "designerId": "d0ace69b-40e6-4d3f-a7cc-8acd8011a601",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "file"
+            },
+            "designerId": "6c6e8c12-dfce-4a7a-8d90-c617d2c7080c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "volume"
+            },
+            "designerId": "e9380347-9a2b-48d7-b6a3-db788d711fe9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "balance"
+            },
+            "designerId": "54f9916c-e9e7-4536-af0c-694a80713ffe"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "frequency"
+            },
+            "designerId": "4266ba2d-fd65-4f59-ab0a-db2a8e0c471b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "random"
+            },
+            "designerId": "1079ae0f-4028-48ef-b1d7-b7fa25ae919b"
+        }
+    ]
+}

@@ -50,6 +50,39 @@
                 }
             ]
         },
+        "7bf97a15-d0e6-4447-a261-f562d7821bbf": {
+            "id": "7bf97a15-d0e6-4447-a261-f562d7821bbf",
+            "cn": [
+                {
+                    "id": "09efc117-bf40-486a-b04b-3cae00447776",
+                    "cn": [
+                        {
+                            "id": "21abb64f-0ac5-4d5d-b233-f091239fd0e3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "d0ace69b-40e6-4d3f-a7cc-8acd8011a601": {
+            "id": "d0ace69b-40e6-4d3f-a7cc-8acd8011a601",
+            "cn": [
+                {
+                    "id": "6c6e8c12-dfce-4a7a-8d90-c617d2c7080c"
+                },
+                {
+                    "id": "e9380347-9a2b-48d7-b6a3-db788d711fe9"
+                },
+                {
+                    "id": "54f9916c-e9e7-4536-af0c-694a80713ffe"
+                },
+                {
+                    "id": "4266ba2d-fd65-4f59-ab0a-db2a8e0c471b"
+                },
+                {
+                    "id": "1079ae0f-4028-48ef-b1d7-b7fa25ae919b"
+                }
+            ]
+        },
         "28664d3f-a5a2-498e-9a9d-cdb6b67f001d": {
             "id": "28664d3f-a5a2-498e-9a9d-cdb6b67f001d"
         },
@@ -59,7 +92,9 @@
     },
     "tabState": {
         "openTabs": [
-            "78922648-81c3-4d32-8f84-b21a08878ecd"
+            "78922648-81c3-4d32-8f84-b21a08878ecd",
+            "7bf97a15-d0e6-4447-a261-f562d7821bbf",
+            "d0ace69b-40e6-4d3f-a7cc-8acd8011a601"
         ]
     },
     "canvasState": {

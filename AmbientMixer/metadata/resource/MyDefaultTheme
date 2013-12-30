@@ -11,6 +11,7 @@
     "designerId": "5fb362e9-680b-41bd-92f7-15b312cfa8a0",
     "storage": {
         "needsCompile": false,
+        "simple": {},
         "nameIndex": 1,
         "varData": {}
     }

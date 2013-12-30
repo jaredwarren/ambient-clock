@@ -1,0 +1,36 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Channels",
+        "model": "Channel",
+        "storeId": "Channels"
+    },
+    "designerId": "7bf97a15-d0e6-4447-a261-f562d7821bbf",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "09efc117-bf40-486a-b04b-3cae00447776",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "21abb64f-0ac5-4d5d-b233-f091239fd0e3"
+                }
+            ]
+        }
+    ]
+}
