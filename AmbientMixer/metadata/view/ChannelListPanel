@@ -1,0 +1,57 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ChannelListPanel"
+    },
+    "designerId": "1848b96a-f7a8-4980-89c8-8ee07b2788c5",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "add",
+                "text": "Add Channel"
+            },
+            "designerId": "16149ee7-e911-4c91-915a-b5438a727c5b"
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "channelList",
+                "store": "Channels"
+            },
+            "designerId": "db0412d0-39c2-41d2-8737-345f536f6d9f",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div>List Item {string}</div>"
+                        ]
+                    },
+                    "designerId": "e0ccdcbd-ae72-4d5d-88d2-5ca766751ddc"
+                }
+            ]
+        }
+    ]
+}

@@ -34,14 +34,19 @@
     "framework": "touch23",
     "viewOrderMap": {
         "view": [
-            "78922648-81c3-4d32-8f84-b21a08878ecd"
+            "78922648-81c3-4d32-8f84-b21a08878ecd",
+            "1848b96a-f7a8-4980-89c8-8ee07b2788c5"
         ],
         "store": [
-            "7bf97a15-d0e6-4447-a261-f562d7821bbf"
+            "7bf97a15-d0e6-4447-a261-f562d7821bbf",
+            "bd2aa5e2-a100-48d8-852a-2b707db3b1f0"
         ],
-        "controller": [],
+        "controller": [
+            "27377a16-25b1-48c1-8aec-a1b7ead82466"
+        ],
         "model": [
-            "d0ace69b-40e6-4d3f-a7cc-8acd8011a601"
+            "d0ace69b-40e6-4d3f-a7cc-8acd8011a601",
+            "8bef0c8c-a615-4ca4-9c5a-54ad8585a652"
         ],
         "resource": [
             "28664d3f-a5a2-498e-9a9d-cdb6b67f001d",

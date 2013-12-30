@@ -1,0 +1,39 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Mixes",
+        "model": "Mix",
+        "storeId": "Mixes"
+    },
+    "designerId": "bd2aa5e2-a100-48d8-852a-2b707db3b1f0",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "mixes.js"
+            },
+            "designerId": "b3f4f748-a4d2-496a-800e-b22608b75cec",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "77b7113e-1772-4e72-a16e-7e024d4b5de0"
+                }
+            ]
+        }
+    ]
+}

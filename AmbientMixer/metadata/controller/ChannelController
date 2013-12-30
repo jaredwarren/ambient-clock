@@ -1,0 +1,37 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ChannelController"
+    },
+    "designerId": "27377a16-25b1-48c1-8aec-a1b7ead82466",
+    "cn": [
+        {
+            "type": "staticfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "min",
+                    "max"
+                ],
+                "fn": "getRandomInt",
+                "implHandler": [
+                    "if(min === max){\r",
+                    "    return min;\r",
+                    "}\r",
+                    "\r",
+                    "return Math.floor(Math.random() * (max - min + 1)) + min;"
+                ]
+            },
+            "designerId": "b1147e24-b2f0-4e61-9bb1-dbc2fcddc709"
+        }
+    ]
+}

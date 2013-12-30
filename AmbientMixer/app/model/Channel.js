@@ -23,19 +23,36 @@ Ext.define('AmbientMixer.model.Channel', {
     config: {
         fields: [
             {
-                name: 'file'
+                name: 'file',
+                type: 'string'
             },
             {
-                name: 'volume'
+                defaultValue: 50,
+                name: 'volume',
+                type: 'int'
             },
             {
-                name: 'balance'
+                defaultValue: 50,
+                name: 'balance',
+                type: 'int'
             },
             {
-                name: 'frequency'
+                defaultValue: [
+                    0,
+                    100
+                ],
+                name: 'randomRange',
+                type: 'auto'
             },
             {
-                name: 'random'
+                defaultValue: 0,
+                name: 'delay',
+                type: 'int'
+            },
+            {
+                defaultValue: false,
+                name: 'random',
+                type: 'boolean'
             }
         ]
     }

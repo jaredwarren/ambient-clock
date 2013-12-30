@@ -18,7 +18,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "file"
+                "name": "file",
+                "type": "string"
             },
             "designerId": "6c6e8c12-dfce-4a7a-8d90-c617d2c7080c"
         },
@@ -30,7 +31,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "volume"
+                "defaultValue": [
+                    "50"
+                ],
+                "name": "volume",
+                "type": "int"
             },
             "designerId": "e9380347-9a2b-48d7-b6a3-db788d711fe9"
         },
@@ -42,7 +47,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "balance"
+                "defaultValue": [
+                    "50\r",
+                    ""
+                ],
+                "name": "balance",
+                "type": "int"
             },
             "designerId": "54f9916c-e9e7-4536-af0c-694a80713ffe"
         },
@@ -54,7 +64,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "frequency"
+                "defaultValue": [
+                    "[0, 100]"
+                ],
+                "name": "randomRange",
+                "type": "auto"
             },
             "designerId": "4266ba2d-fd65-4f59-ab0a-db2a8e0c471b"
         },
@@ -66,7 +80,27 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "random"
+                "defaultValue": [
+                    "0"
+                ],
+                "name": "delay",
+                "type": "int"
+            },
+            "designerId": "f9c088c1-7644-4a23-b9fd-b80c8fcf62ce"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaultValue": [
+                    "false"
+                ],
+                "name": "random",
+                "type": "boolean"
             },
             "designerId": "1079ae0f-4028-48ef-b1d7-b7fa25ae919b"
         }

@@ -6,15 +6,21 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "ChannelController"
+        ],
         "models": [
-            "Channel"
+            "Channel",
+            "Mix"
         ],
         "name": "AmbientMixer",
         "stores": [
-            "Channels"
+            "Channels",
+            "Mixes"
         ],
         "views": [
-            "ChannelFormPanel"
+            "ChannelFormPanel",
+            "ChannelListPanel"
         ]
     },
     "designerId": "application"

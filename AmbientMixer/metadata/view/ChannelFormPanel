@@ -12,16 +12,33 @@
     "designerId": "78922648-81c3-4d32-8f84-b21a08878ecd",
     "cn": [
         {
-            "type": "Ext.field.File",
+            "type": "Ext.field.Text",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Field"
+                "itemId": "fileField",
+                "label": "File",
+                "name": "file",
+                "readOnly": true
             },
-            "designerId": "6cd45c20-4860-4286-9cc2-7f79bb83ca14"
+            "designerId": "d48b399a-f738-4ad0-b4c6-0f2e14dcb08b"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "action",
+                "itemId": "fileButton",
+                "text": "Select Sound File"
+            },
+            "designerId": "3b9ece39-0ca0-4909-90c3-0df092000904"
         },
         {
             "type": "Ext.field.Slider",
@@ -31,7 +48,9 @@
             },
             "codeClass": null,
             "userConfig": {
+                "itemId": "volumeSlider",
                 "label": "Volume",
+                "name": "volume",
                 "value": [
                     50
                 ]
@@ -47,9 +66,11 @@
             "codeClass": null,
             "userConfig": {
                 "increment": 0.1,
+                "itemId": "balanceSlider",
                 "label": "Balance",
                 "maxValue": 1,
                 "minValue": -1,
+                "name": "balance",
                 "value": [
                     0
                 ]
@@ -64,96 +85,34 @@
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Random"
+                "itemId": "randomToggle",
+                "label": "Random",
+                "name": "random"
             },
-            "designerId": "9fc05c6e-fab6-4100-9b4f-b62e52759dbe"
-        },
-        {
-            "type": "Ext.field.Spinner",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "label": "Delay",
-                "minValue": 0,
-                "stepValue": 1
-            },
-            "designerId": "3d9077db-0621-4d2d-bc48-146a04e7f190"
-        },
-        {
-            "type": "Ext.Button",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "iconCls": "action",
-                "text": "Play"
-            },
-            "designerId": "2937ca83-05c8-41f1-848d-e6c09178612f"
-        },
-        {
-            "type": "Ext.field.Select",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "label": "Field"
-            },
-            "designerId": "2fe1c7d2-8999-471b-8abb-b1ce5cbc13ad"
-        },
-        {
-            "type": "Ext.field.DatePicker",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "label": "Field",
-                "placeHolder": "mm/dd/yyyy"
-            },
-            "designerId": "b4694321-09da-4f82-83a7-712bb3ad63d9",
+            "designerId": "9fc05c6e-fab6-4100-9b4f-b62e52759dbe",
             "cn": [
                 {
-                    "type": "Ext.picker.Date",
+                    "type": "basiceventbinding",
                     "reference": {
-                        "name": "picker",
-                        "type": "object"
+                        "name": "listeners",
+                        "type": "array"
                     },
                     "codeClass": null,
-                    "designerId": "a26eade4-1a80-4bfa-88bd-0a0b39fc0e23",
-                    "cn": [
-                        {
-                            "type": "Ext.Button",
-                            "reference": {
-                                "name": "doneButton",
-                                "type": "object"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "text": "Done"
-                            },
-                            "designerId": "17159c50-d048-4408-aefd-1cf1696e2758"
-                        },
-                        {
-                            "type": "Ext.Button",
-                            "reference": {
-                                "name": "cancelButton",
-                                "type": "object"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "text": "Cancel"
-                            },
-                            "designerId": "b80b61b1-6a9f-4b1a-a527-c8bd6b7bb8ef"
-                        }
-                    ]
+                    "userConfig": {
+                        "fn": "onRandomToggleChange",
+                        "implHandler": [
+                            "if(newValue){\r",
+                            "    togglefield.up('.formpanel').down('#randomRangeSlider').show();\r",
+                            "    togglefield.up('.formpanel').down('#delaySlider').hide();\r",
+                            "}\r",
+                            "else{\r",
+                            "    togglefield.up('.formpanel').down('#delaySlider').show();\r",
+                            "    togglefield.up('.formpanel').down('#randomRangeSlider').hide();\r",
+                            "}"
+                        ],
+                        "name": "change"
+                    },
+                    "designerId": "1d3091fb-94fa-41c9-ae25-8cd2b4c03746"
                 }
             ]
         },
@@ -165,9 +124,83 @@
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Field"
+                "hidden": true,
+                "itemId": "randomRangeSlider",
+                "label": "Random Delay",
+                "maxValue": 600,
+                "name": "randomRange",
+                "value": [
+                    1,
+                    100
+                ]
             },
-            "designerId": "ea903d4c-4f9d-428f-982f-75aec8975efc"
+            "designerId": "d3f0ba4c-9602-4356-b446-9066c4639ba9"
+        },
+        {
+            "type": "Ext.field.Slider",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "delaySlider",
+                "label": "Delay",
+                "maxValue": 600,
+                "name": "delay",
+                "value": [
+                    1
+                ]
+            },
+            "designerId": "082e791b-7b89-4b2d-9337-5be7a17f80ac"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "action",
+                "iconCls": "play",
+                "itemId": "playChannelButton",
+                "text": "Play",
+                "ui": "action"
+            },
+            "designerId": "2937ca83-05c8-41f1-848d-e6c09178612f"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "confirm",
+                "iconCls": "add",
+                "itemId": "saveButton",
+                "text": "Save",
+                "ui": "confirm"
+            },
+            "designerId": "0c7e188c-fd10-4d66-99ad-6eb578f2e3b8"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|uiInterfaceName": "decline",
+                "iconCls": "delete",
+                "itemId": "saveButton1",
+                "text": "Cancel",
+                "ui": "decline"
+            },
+            "designerId": "8f2b172a-6c91-45a6-96a9-79a2c5173418"
         }
     ]
 }

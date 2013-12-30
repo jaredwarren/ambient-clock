@@ -17,30 +17,40 @@ Ext.define('AmbientMixer.view.ChannelFormPanel', {
     extend: 'Ext.form.Panel',
 
     requires: [
-        'Ext.field.File',
-        'Ext.field.Toggle',
-        'Ext.field.Spinner',
+        'Ext.field.Text',
         'Ext.Button',
-        'Ext.field.DatePicker',
-        'Ext.picker.Date'
+        'Ext.field.Toggle'
     ],
 
     config: {
         items: [
             {
-                xtype: 'filefield',
-                label: 'Field'
+                xtype: 'textfield',
+                itemId: 'fileField',
+                label: 'File',
+                name: 'file',
+                readOnly: true
+            },
+            {
+                xtype: 'button',
+                itemId: 'fileButton',
+                iconCls: 'action',
+                text: 'Select Sound File'
             },
             {
                 xtype: 'sliderfield',
+                itemId: 'volumeSlider',
                 label: 'Volume',
+                name: 'volume',
                 value: [
                     50
                 ]
             },
             {
                 xtype: 'sliderfield',
+                itemId: 'balanceSlider',
                 label: 'Balance',
+                name: 'balance',
                 value: [
                     0
                 ],
@@ -50,33 +60,72 @@ Ext.define('AmbientMixer.view.ChannelFormPanel', {
             },
             {
                 xtype: 'togglefield',
-                label: 'Random'
-            },
-            {
-                xtype: 'spinnerfield',
-                label: 'Delay',
-                minValue: 0,
-                stepValue: 1
-            },
-            {
-                xtype: 'button',
-                iconCls: 'action',
-                text: 'Play'
-            },
-            {
-                xtype: 'selectfield',
-                label: 'Field'
-            },
-            {
-                xtype: 'datepickerfield',
-                label: 'Field',
-                placeHolder: 'mm/dd/yyyy'
+                itemId: 'randomToggle',
+                label: 'Random',
+                name: 'random'
             },
             {
                 xtype: 'sliderfield',
-                label: 'Field'
+                hidden: true,
+                itemId: 'randomRangeSlider',
+                label: 'Random Delay',
+                name: 'randomRange',
+                value: [
+                    1,
+                    100
+                ],
+                maxValue: 600
+            },
+            {
+                xtype: 'sliderfield',
+                itemId: 'delaySlider',
+                label: 'Delay',
+                name: 'delay',
+                value: [
+                    1
+                ],
+                maxValue: 600
+            },
+            {
+                xtype: 'button',
+                itemId: 'playChannelButton',
+                ui: 'action',
+                iconCls: 'play',
+                text: 'Play'
+            },
+            {
+                xtype: 'button',
+                itemId: 'saveButton',
+                ui: 'confirm',
+                iconCls: 'add',
+                text: 'Save'
+            },
+            {
+                xtype: 'button',
+                itemId: 'saveButton1',
+                ui: 'decline',
+                iconCls: 'delete',
+                text: 'Cancel'
+            }
+        ],
+        listeners: [
+            {
+                fn: 'onRandomToggleChange',
+                event: 'change',
+                delegate: '#randomToggle'
             }
         ]
+    },
+
+    onRandomToggleChange: function(togglefield, newValue, oldValue, eOpts) {
+        if(newValue){
+            togglefield.up('.formpanel').down('#randomRangeSlider').show();
+            togglefield.up('.formpanel').down('#delaySlider').hide();
+        }
+        else{
+            togglefield.up('.formpanel').down('#delaySlider').show();
+            togglefield.up('.formpanel').down('#randomRangeSlider').hide();
+        }
     }
 
 });
